@@ -1,0 +1,21 @@
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a asp-area="" asp-controller="Shop" asp-action="Index">Artikel anzeigen</a>
+                        <a asp-area="" asp-controller="Shop" asp-action="CreateArticle">Artikel erstellen</a>
+                        <a asp-area="" asp-controller="Shop" asp-action="SendBack">Zurückgeben</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
