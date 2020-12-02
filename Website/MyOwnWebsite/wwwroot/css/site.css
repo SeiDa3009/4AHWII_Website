@@ -1,0 +1,68 @@
+﻿#container {
+    width: 80%;
+    margin: 0px auto;
+    background-color: midnightblue;
+}
+
+content {
+    width: 80%;
+    min-width: 450px;
+    float: left;
+    padding: 20px 10px 10px 10px;
+    border-left: 2px solid#000000;
+    border-right: 2px solid#000000;
+    background-color: mediumblue;
+    color: white;
+    opacity: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 750px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    min-width: 50px;
+    height: 750px;
+    background-color: midnightblue;
+    border-right: 2px solid#000000;
+    padding-top: 20px;
+    opacity: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+body {
+
+}
+main{
+    background-color: midnightblue;
+}
+.background {
+    background-image: url(../Content/design.jpg);
+    background-size: cover;
+    height: 20%;
+}
+.navbar-table{
+    text-decoration:none;
+    list-style:none;
+    
+}
+
+.navbar-table a:link, a:visited{
+    text-decoration:none;
+    color:white;
+}
+
+.navbar-table a:hover{
+    font-weight:bold;
+}
+
+.table-header{
+    text-align:center;
+}
+
+.input{
+    width: 75%;
+}

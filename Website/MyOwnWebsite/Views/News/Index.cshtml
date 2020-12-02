@@ -1,0 +1,31 @@
+﻿@model MyOwnWebsite.Models.News
+<h1 style="text-align:center">News</h1>
+<h7>Nachrichten erstellen</h7>
+
+<form class"input" asp-controller="News" asp-action="index" method="post">
+    <label asp-for="Header">Überschrift</label><br />
+    <input asp-for="Header" /><br />
+    <span asp-validation-for="Header" class="text-danger" style="font-weight:bold"></span><br />
+
+    <label asp-for="Content">Inhalt</label><br />
+    <textarea asp-for="Content" rows="10" cols="40"></textarea><br />
+    <span asp-validation-for="Content" class="text-danger" style="font-weight:bold"></span><br />
+
+    <label asp-for="ReleaseDate">Erscheinungsdatum</label><br />
+    <input asp-for="ReleaseDate" type="date"/><br />
+    <span asp-validation-for="ReleaseDate" class="text-danger" style="font-weight:bold"></span><br />
+
+    <label asp-for="Category">Bereich auswählen</label><br />
+    <select asp-for="Category">
+        <option value="notSpecified">bitte auswählen</option>
+        <option value="Global">Global</option>
+        <option value="Local">Lokal</option>
+        <option value="Weather">Wetter</option>
+        <option value="Sport">Sportoption</option>
+        <option value="Deathnotice">Trauerblatt</option>
+    </select><br />
+    <span asp-validation-for="Category" class="text-danger" style="font-weight:bold"></span><br />
+
+    <input type="submit" value="Artikel erzeugen" />
+    <input type="reset" value="Abbrechen" />
+</form>
